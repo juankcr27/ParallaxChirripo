@@ -1,4 +1,4 @@
 ParallaxChirripo
 ================
 
-Web Site, Chirripo with Parallax testing
+Web Site, Chirripo with Parallax
