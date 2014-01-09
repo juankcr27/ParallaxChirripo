@@ -17,6 +17,12 @@ body {
 
 }
 
+nav {
+    z-index: 1;
+    position: fixed;
+    top: 25%;
+}
+
 .wrapper, .section {
     height: 100%;
 }
@@ -33,24 +39,30 @@ body {
 }
 
 .section-sun {
-    top: 15%;
-}
-
-.sun {
-    background: url(../images/sun.png);
-}
-
-.mercury {
-    background: url(../images/mercury.png);
+    padding-top: 15%;
 }
 
 .img {
-    position: relative;
+    position: absolute;
     top: 25%;
     margin: 0 auto;
     width: 300px;
     height: 300px;    
 }
+
+
+.sun {
+    top: 40%;
+    left: 42.5%;
+    background: url(../images/sun.png);
+}
+
+.mercury {
+    top: 40%;
+    left: 42.5%;
+    background: url(../images/mercury.png);
+}
+
 
 .small-star {
     width: 15px;

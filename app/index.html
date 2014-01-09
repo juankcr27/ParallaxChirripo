@@ -24,22 +24,23 @@
     <body>
         <nav>
             <ul>
-                <li><a href="#start">Sun</a></li>
+                <li><a href="#start" data-id="sun">Sun</a></li>
+                <li><a href="#mercury" data-id="mercury">Mercury</a></li>
                 
             </ul>
         </nav>
         <section class="wrapper">
-            <section class="section section-sun"  data-stellar-ratio="3.5">
+            <section id="sun" class="section section-sun">
                 <section>
                     <header>Sun</header>
-                    <div class="img sun"></div>
+                    <div class="img sun" data-stellar-ratio="3.5"></div>
                 </section>
                 
             </section>
-            <section class="section" data-stellar-ratio="3.5" data-stellar-horizontal-offset="0" data-stellar-vertical-offset="150">
+            <section id="mercury" class="section">
                 <section>
                     <header>Mercury</header>
-                    <div class="img mercury"></div>
+                    <div class="img mercury" data-stellar-ratio="3.5"></div>
                 </section>
             </section>
             <section class="section"></section>
