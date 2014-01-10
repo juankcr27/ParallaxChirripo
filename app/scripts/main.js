@@ -119,10 +119,15 @@ function loadInfo() {
 
 function initializeImgOnClick() {
 	$( '.img' ).click(function() {
-		$(this)
-			.parent()
+		var $parent =  $(this).parent();
+			
+		$parent
 			.find( '.stats' )
 			.addClass( 'animation' );
+
+		$parent
+			.find( '.info' )
+			.addClass( 'showInfo' );
 	});
 }
 

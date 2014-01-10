@@ -139,6 +139,12 @@ a {
     background: url(../images/jupiter.png);
 }
 
+.jupiter-bigger {
+    position: relative;
+    top: 30%;
+    left: 15%;
+}
+
 .saturn {
     top: 30%;
     left: 30%;
@@ -187,11 +193,24 @@ a {
 }
 
 .animation {
-    animation: showInfo 1s forwards;
-    -webkit-animation: showInfo 1s forwards;
+    animation: showAnimation 1s forwards;
+    -webkit-animation: showAnimation 1s forwards;
 }
 
-@keyframes showInfo {
+.info {
+    opacity: 0;
+    width: 250px;
+    padding: 10px 15px;
+    background: rgba(233, 233, 233, 0.42);
+    box-shadow: 0 0 30px white;
+}
+
+.showInfo {
+    animation: showInfo 1s 1s forwards;
+    -webkit-animation: showInfo 1s 1s forwards;
+}
+
+@keyframes showAnimation {
     from {
         opacity: 0;
         -moz-transform: translateX(-300px);
@@ -204,7 +223,7 @@ a {
     }
 }
 
-@-webkit-keyframes showInfo {
+@-webkit-keyframes showAnimation {
     from {
         opacity: 0;
         -webkit-transform: translateX(-300px);
@@ -212,5 +231,23 @@ a {
     to {
         opacity: 1;
         -webkit-transform: translateX(0);
+    }
+}
+
+@keyframes showInfo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes showInfo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
