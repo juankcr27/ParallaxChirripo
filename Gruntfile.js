@@ -15,6 +15,8 @@ module.exports = function (grunt) {
     // Time how long tasks take. Can help when optimizing build times
     require('time-grunt')(grunt);
 
+    grunt.loadNpmTasks('grunt-contrib-handlebars');
+
     // Define the configuration for all the tasks
     grunt.initConfig({
 
@@ -23,6 +25,14 @@ module.exports = function (grunt) {
             // Configurable paths
             app: 'app',
             dist: 'dist'
+        },
+
+        handlebars: {
+            all: {
+                files: {
+                    '<%= yeoman.app %>/scripts/templates.js': ['<%= yeoman.app %>/templates/{,*/}*.hbs']
+                }
+            }
         },
 
         // Watches files for changes and runs tasks based on the changed files
@@ -359,6 +369,7 @@ module.exports = function (grunt) {
         grunt.task.run([
             'clean:server',
             'concurrent:server',
+            'handlebars',
             'autoprefixer',
             'connect:livereload',
             'watch'
