@@ -14,7 +14,7 @@ body {
     color: white;
     font-size: 20px;
     font-family: "Open-Sans", sans-serif;
-
+    overflow: hidden;
 }
 
 nav {
@@ -26,6 +26,7 @@ nav {
         padding: 0;
         li {
             padding: 5px 15px;
+            margin-bottom: 10px;
         }
     }
 }
@@ -37,6 +38,10 @@ nav ul li:hover, .active {
     left: 34px;
     position: relative;
     text-decoration: underline;
+}
+
+a {
+    color: #AACBE7;
 }
 
 .wrapper, .section {

@@ -3,7 +3,7 @@
 function goToByScroll(id){
 	var $id = $('#'+id),
 		offsetTop = $id.offset().top;
-	$('html,body').animate({
+	$('html, body').animate({
 			scrollTop: offsetTop
 		},
 		'slow');
@@ -134,10 +134,12 @@ $( document ).ready(function() {
 	$( 'nav a' ).each(function() {
 		var id = $(this).data('id');
 		$(this).click(function( e ) {
+			$( '.active' ).removeClass( 'active' );
 			e.preventDefault();
 			if(lastId !== id) {
 				lastId = id;
 				goToByScroll(id);
+				$( this ).parent().addClass( 'active' );
 			}
 		});
 	});
