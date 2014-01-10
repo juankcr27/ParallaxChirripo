@@ -55,6 +55,7 @@ nav ul li {
     position: absolute;
     top: 40%;
     left: 42.5%;
+    cursor: pointer;
 }
 
 .stats {
@@ -95,6 +96,21 @@ nav ul li {
     background: url(../images/venus.png);
 }
 
+.earth {
+    top: 25%;
+    left: 42.5%;
+    width: 300px;
+    height: 300px;
+    background: url(../images/earth.png);
+}
+
+.moon {
+    top: 25%;
+    left: 35%;
+    width: 90px;
+    height: 92px;
+    background: url(../images/moon.png);
+}
 
 .small-star {
     width: 15px;
