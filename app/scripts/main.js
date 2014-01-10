@@ -46,7 +46,7 @@ function loadInfo() {
 				surfaceArea: new Handlebars.SafeString('510 072 000 km<sup>2</sup>'),
 				diameter: '12 742 km',
 				gravity: new Handlebars.SafeString('9,780327 m/s<sup>2</sup>'),
-				satellites: new Handlebars.SafeString('1 natural(the moon)<br> + 8300 artificials')
+				satellites: new Handlebars.SafeString('1 natural (the moon)<br> + 8300 artificials')
 			},
 			{
 				id: 'mars',
