@@ -32,6 +32,15 @@ nav ul li {
     padding: 5px 15px;
 }
 
+nav ul li:hover, .active {
+    transform: scale(2,4);
+    -moz-transform: scale(2,2);
+    -webkit-transform: scale(2,2);
+    left: 34px;
+    position: relative;
+    text-decoration: underline;
+}
+
 .wrapper, .section {
     height: 100%;
 }
@@ -90,6 +99,8 @@ nav ul li {
 .venus {
     top: 25%;
     left: 42.5%;
+    width: 300px;
+    height: 300px;
     background: url(../images/venus.png);
 }
 
@@ -108,6 +119,55 @@ nav ul li {
     height: 92px;
     background: url(../images/moon.png);
 }
+
+.mars {
+    top: 25%;
+    left: 44%;
+    width: 230px;
+    height: 230px;
+    background: url(../images/mars.png);
+}
+
+.jupiter {
+    top: 30%;
+    left: 34%;
+    width: 600px;
+    height: 600px;
+    background: url(../images/jupiter.png);
+}
+
+.saturn {
+    top: 30%;
+    left: 30%;
+    width: 750px;
+    height: 400px;
+    background: url(../images/saturn.png);
+}
+
+.uranus {
+    top: 25%;
+    left: 39%;
+    width: 400px;
+    height: 400px;
+    background: url(../images/uranus.png);
+}
+
+.neptune {
+    top: 25%;
+    left: 39%;
+    width: 400px;
+    height: 400px;
+    background: url(../images/neptune.png);
+}
+
+.pluto {
+    top: 25%;
+    left: 45%;
+    width: 150px;
+    height: 150px;
+    background: url(../images/pluto.png);
+}
+
 
 .small-star {
     width: 15px;
