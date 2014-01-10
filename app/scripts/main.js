@@ -44,6 +44,4 @@ $( document ).ready(function() {
 		verticalScrolling: true,
 		hideDistantElements: false
 	});
-
-	$(this).scrollTop(0);
 });
