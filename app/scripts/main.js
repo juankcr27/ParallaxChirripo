@@ -14,14 +14,13 @@ function loadInfo() {
 	var planets = [
 			{
 				id: 'sun',
-				mass: new Handlebars.SafeString('3,302×10<sup>23</sup> kg'),
-				density: new Handlebars.SafeString('5,43 g/cm<sup>3</sup>'),
-				surfaceArea: new Handlebars.SafeString('7,5 × 10<sup>7</sup> km<sup>2</sup>'),
+				mass: new Handlebars.SafeString(''),
+				density: new Handlebars.SafeString(''),
+				surfaceArea: new Handlebars.SafeString(''),
 				diameter: '',
 				gravity: '',
 				satellites: ''
 			},
-
 			{
 				id: 'mercury',
 				mass: new Handlebars.SafeString('3,302×10<sup>23</sup> kg'),
@@ -30,7 +29,79 @@ function loadInfo() {
 				diameter: '',
 				gravity: '',
 				satellites: ''
-			}
+			},
+			{
+				id: 'venus',
+				mass: new Handlebars.SafeString(''),
+				density: new Handlebars.SafeString(''),
+				surfaceArea: new Handlebars.SafeString(''),
+				diameter: '',
+				gravity: '',
+				satellites: ''
+			},
+			{
+				id: 'earth',
+				mass: new Handlebars.SafeString(''),
+				density: new Handlebars.SafeString(''),
+				surfaceArea: new Handlebars.SafeString(''),
+				diameter: '',
+				gravity: '',
+				satellites: ''
+			},
+			{
+				id: 'mars',
+				mass: new Handlebars.SafeString(''),
+				density: new Handlebars.SafeString(''),
+				surfaceArea: new Handlebars.SafeString(''),
+				diameter: '',
+				gravity: '',
+				satellites: ''
+			},
+			{
+				id: 'jupiter',
+				mass: new Handlebars.SafeString(''),
+				density: new Handlebars.SafeString(''),
+				surfaceArea: new Handlebars.SafeString(''),
+				diameter: '',
+				gravity: '',
+				satellites: ''
+			},
+			{
+				id: 'saturn',
+				mass: new Handlebars.SafeString(''),
+				density: new Handlebars.SafeString(''),
+				surfaceArea: new Handlebars.SafeString(''),
+				diameter: '',
+				gravity: '',
+				satellites: ''
+			},
+			{
+				id: 'uranus',
+				mass: new Handlebars.SafeString(''),
+				density: new Handlebars.SafeString(''),
+				surfaceArea: new Handlebars.SafeString(''),
+				diameter: '',
+				gravity: '',
+				satellites: ''
+			},
+			{
+				id: 'neptune',
+				mass: new Handlebars.SafeString(''),
+				density: new Handlebars.SafeString(''),
+				surfaceArea: new Handlebars.SafeString(''),
+				diameter: '',
+				gravity: '',
+				satellites: ''
+			},
+			{
+				id: 'pluto',
+				mass: new Handlebars.SafeString(''),
+				density: new Handlebars.SafeString(''),
+				surfaceArea: new Handlebars.SafeString(''),
+				diameter: '',
+				gravity: '',
+				satellites: ''
+			},
 		],
 		i = 0,
 		length = planets.length,
@@ -52,7 +123,7 @@ function initializeImgOnClick() {
 			.parent()
 			.find( '.stats' )
 			.addClass( 'animation' );
-	})
+	});
 }
 
 $( document ).ready(function() {
