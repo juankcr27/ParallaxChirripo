@@ -21,15 +21,13 @@ nav {
     z-index: 1;
     position: fixed;
     top: 25%;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    padding: 5px 15px;
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            padding: 5px 15px;
+        }
+    }
 }
 
 nav ul li:hover, .active {
