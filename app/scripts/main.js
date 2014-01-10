@@ -11,23 +11,54 @@ function goToByScroll(id){
 
 
 function loadInfo() {
-	var mercury = {
-		mass: new Handlebars.SafeString('3,302×10<sup>23</sup> kg'),
-		density: new Handlebars.SafeString('5,43 g/cm<sup>3</sup>'),
-		surfaceArea: new Handlebars.SafeString('7,5 × 10<sup>7</sup> km<sup>2</sup>'),
-		diameter: '',
-		gravity: '',
-		satellites: ''
-	};
-	var postTemplate = JST['app/templates/template.hbs'];
-	var html = postTemplate(mercury);
-	$( '#mercury .stats' ).append(html);
+	var planets = [
+			{
+				id: 'sun',
+				mass: new Handlebars.SafeString('3,302×10<sup>23</sup> kg'),
+				density: new Handlebars.SafeString('5,43 g/cm<sup>3</sup>'),
+				surfaceArea: new Handlebars.SafeString('7,5 × 10<sup>7</sup> km<sup>2</sup>'),
+				diameter: '',
+				gravity: '',
+				satellites: ''
+			},
+
+			{
+				id: 'mercury',
+				mass: new Handlebars.SafeString('3,302×10<sup>23</sup> kg'),
+				density: new Handlebars.SafeString('5,43 g/cm<sup>3</sup>'),
+				surfaceArea: new Handlebars.SafeString('7,5 × 10<sup>7</sup> km<sup>2</sup>'),
+				diameter: '',
+				gravity: '',
+				satellites: ''
+			}
+		],
+		i = 0,
+		length = planets.length,
+		templateFn,
+		html,
+		item;
+
+	for(; i < length; i++) {
+		item = planets[i];
+		templateFn = JST['app/templates/template.hbs'];
+		html = templateFn(item);
+		$( '#' + item.id + ' .stats' ).append(html);
+	}
+}
+
+function initializeImgOnClick() {
+	$( '.img' ).click(function() {
+		$(this)
+			.parent()
+			.find( '.stats' )
+			.addClass( 'animation' );
+	})
 }
 
 $( document ).ready(function() {
 	var lastId = '';
-
 	loadInfo();
+	initializeImgOnClick();
 
 	$( 'nav a' ).each(function() {
 		var id = $(this).data('id');

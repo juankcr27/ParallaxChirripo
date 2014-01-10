@@ -47,10 +47,6 @@ nav ul li {
     font-size: 45px;
 }
 
-.section-sun {
-    padding-top: 15%;
-}
-
 .img {
     position: absolute;
     top: 40%;
@@ -60,6 +56,7 @@ nav ul li {
 
 .stats {
     position: absolute; 
+    opacity: 0;
     top: 35%;
     right: 10%;
     padding: 5px;
@@ -75,7 +72,7 @@ nav ul li {
 }
 
 .sun {
-    top: 40%;
+    top: 30%;
     left: 32%;
     width: 700px;
     height: 700px;
@@ -124,4 +121,33 @@ nav ul li {
 .star1 {
     top: 51%;
     left: 10%;
+}
+
+.animation {
+    animation: showInfo 1s forwards;
+    -webkit-animation: showInfo 1s forwards;
+}
+
+@keyframes showInfo {
+    from {
+        opacity: 0;
+        -moz-transform: translateX(-300px);
+        transform: translateX(-300px);
+    }
+    to {
+        opacity: 1;
+        -moz-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes showInfo {
+    from {
+        opacity: 0;
+        -webkit-transform: translateX(-300px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
 }
